@@ -1,8 +1,8 @@
 {
   "name": "laud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple library to create and log errors. Useful for APIs.",
-  "main": "index.js",
+  "main": "dist/laud.js",
   "scripts": {
     "prepack": "npm run build",
     "dev": "ts-node src/index.ts",
