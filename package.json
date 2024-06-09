@@ -1,0 +1,35 @@
+{
+  "name": "laud",
+  "version": "1.0.0",
+  "description": "A simple library to create and log errors. Useful for APIs.",
+  "main": "index.js",
+  "scripts": {
+    "prepack": "npm run build",
+    "dev": "ts-node src/index.ts",
+    "build": "rimraf dist && rollup -c",
+    "test": "ts-node src/examples/laud.ts"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "node error",
+    "errors"
+  ],
+  "types": "dist/dts/index.d.ts",
+  "author": "Abdulla Saeed <arashrestart@gmail.com>",
+  "repository": {
+    "url": "https://github.com/6f5/lauda"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.14.2",
+    "rimraf": "^5.0.7",
+    "rollup": "^4.18.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.3",
+    "typescript": "^5.4.5"
+  }
+}
